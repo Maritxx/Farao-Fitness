@@ -1,3 +1,18 @@
+/*CSS Variables*/
+:root {
+    --accent-color-primary: #BF0404;
+    --text-color-primary: #FFFFFF;
+    --background-color-primary: #0D0D0E;
+    --background-color-secondary: #181818;
+
+    --overlay-color-hero: rgba(126, 10, 10, 0.54);
+    --figure-color-primary: rgba(98, 2, 2, 0.89);
+
+    --heading-font: 'AR One Sans', 'Arial', sans-serif; /*500 / 700*/
+    --standard-font: 'Montserrat', 'Arial', sans-serif; /*300 / 400 / 500*/
+}
+
+
 /*CSS Reset code*/
 * {
     box-sizing: border-box;
