@@ -1,0 +1,34 @@
+/*Global Styling*/
+.fourteenFourty {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.twelveHundred {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.tenEighty {
+    position: relative;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.sixHundred {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--background-color-primary);
+    color: var(--text-color-primary);
+    font-family: var(--standard-font);
+}
