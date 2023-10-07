@@ -54,6 +54,19 @@ body {
     font-family: var(--standard-font);
 }
 
+h2 {
+    font-family: var(--heading-font);
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-bottom: 12px;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
 
 
 /*Hero Section*/
@@ -62,6 +75,7 @@ body {
     align-items: center;
     padding-top: 180px;
     padding-bottom: 120px;
+    gap: 10px;
 }
 
 .hero-content__holder--text {
@@ -79,6 +93,7 @@ body {
     font-weight: 200;
     padding-top: 15px;
     padding-bottom: 30px;
+    max-width: 500px;
 }
 
 .hero-accent {
@@ -86,13 +101,30 @@ body {
 }
 
 .hero-content__holder--image {
+    position: relative;
     max-width: 250px;
     max-height: 250px;
     width: 100%;
     height: 100%;
     border-radius: 140px;
-    overflow: hidden;
     z-index: 2;
+}
+
+.hero-content__holder--image::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -4%;
+    background-image: url(../img/hero-accent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    width: 100%;
+    height: 75%;
+}
+
+.hero-content__holder--image img {
+    border-radius: 140px;
 }
 
 .hero-content__holder--background {
@@ -119,5 +151,81 @@ body {
 
 .hero-content__holder--background img {
     height: 100%;
+    object-fit: cover;
+}
+
+
+
+/*About Section*/
+.about__section {
+    margin-top: -25px;
+    z-index: 2;
+    margin-bottom: 75px;
+}
+
+.about-content__holder {
+    display: flex;
+    justify-content: space-between; /*Needs to be fixed for tablet/mobile*/
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-info__container {
+    max-width: 250px;
+    padding: 15px 20px 5px;
+    text-align: center;
+    background-color: var(--background-color-secondary);
+    border-radius: 16px;
+}
+
+.about-info__container h3 {
+    padding-bottom: 10px;
+}
+
+.about-info__container p {
+    font-size: 0.875em;
+    font-weight: 200;
+    max-width: 190px;
+}
+
+.about-info__container--image {
+    max-width: 30px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    
+}
+
+.about-info__container--image img {
+    filter: invert(100%);
+}
+
+
+
+/*Vision Section*/
+.vision__section {
+    margin-bottom: 75px;
+}
+
+.vision-content__holder {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.vision-content__holder--text {
+    max-width: 600px;
+}
+
+.vision-content__holder--image {
+    max-width: 500px;
+    max-height: 300px;
+    width: 100%;
+    border-radius: 16px;
+    border: 2px solid var(--accent-color-primary);
+    overflow: hidden;
+}
+
+.vision-content__holder--image img {
+    max-height: inherit;
     object-fit: cover;
 }
