@@ -1,0 +1,17 @@
+[
+    {
+        "foto": "placeholder.jpg",
+        "review": "TEST1",
+        "naam": "Naam1"
+    },
+    {
+        "foto": "placeholder.jpg",
+        "review": "TEST2",
+        "naam": "Naam2"
+    },
+    {
+        "foto": "placeholder.jpg",
+        "review": "Test3",
+        "naam": "Naam3" 
+    }
+]

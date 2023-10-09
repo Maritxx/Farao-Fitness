@@ -48,10 +48,15 @@
     background-color: var(--accent-color-primary);
 }
 
+.button__outline {
+    border: 1px solid var(--text-color-primary);
+}
+
 body {
     background-color: var(--background-color-primary);
     color: var(--text-color-primary);
     font-family: var(--standard-font);
+    line-height: 24px;
 }
 
 h2 {
@@ -65,6 +70,7 @@ h3 {
     font-family: var(--heading-font);
     font-size: 1.125em;
     font-weight: 500;
+    padding-bottom: 10px;
 }
 
 
@@ -178,10 +184,6 @@ h3 {
     border-radius: 16px;
 }
 
-.about-info__container h3 {
-    padding-bottom: 10px;
-}
-
 .about-info__container p {
     font-size: 0.875em;
     font-weight: 200;
@@ -228,4 +230,160 @@ h3 {
 .vision-content__holder--image img {
     max-height: inherit;
     object-fit: cover;
+}
+
+
+
+/*Testimonials Section*/
+.testimonials__section {
+    margin-bottom: 75px;
+    padding-top: 40px;
+}
+
+.testimonial-content__holder {
+    position: relative;
+    padding: 0 50px;
+}
+
+.slider__holder {
+    background-color: var(--background-color-secondary);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.testimonial__slide {
+    position: relative;
+    display: none;
+    padding: 60px 20px 15px;
+}
+
+.testimonial__slide.activeSlide {
+    display: block;
+}
+
+.testimonial__slide--img {
+    position: absolute;
+    top: -40px;
+    left: calc(50% - 40px);
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 99px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.testimonial__slide--img img {
+    object-fit: cover;
+    max-width: inherit;
+    max-height: inherit;
+}
+
+.testimonial__slide span {
+    display: block;
+    font-size: 0.875em;
+    font-weight: 200;
+    padding-top: 25px;
+}
+
+.slide__button {
+    position: absolute;
+    top: calc(50% - 17px);
+    font-size: 40px;
+    width: 34px;
+    height: 34px;
+    border-radius: 99px;
+    background-color: var(--accent-color-primary);
+}
+
+.slide__button--prev {
+    left: 0;
+}
+
+.slide__button--next {
+    right: 0;
+}
+
+
+
+/*Work Method Section*/
+.work-method__section {
+    margin-bottom: 75px;
+}
+
+.work-method-content__holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.work-method-content__holder--text {
+    max-width: 550px;
+}
+
+.work-method-content__holder--image {
+    position: relative;
+    max-width: 400px;
+    max-height: 250px;
+    width: 100%;
+    z-index: 2;
+    margin-right: 6%;
+}
+
+.work-method-content__holder--image::after {
+    content: "";
+    top: 0;
+    right: 0;
+    margin-top: -15%;
+    margin-right: -17%;
+    position: absolute;
+    border: 24px solid var(--figure-color-primary);
+    border-radius: 16px;
+    width: 80%;
+    height: 80%;
+    z-index: 1;
+}
+
+.work-method-content__holder--image img {
+    position: relative;
+    z-index: 2;
+    object-fit: cover;
+    max-height: inherit;
+    border-radius: 16px;
+    border: 2px solid var(--accent-color-primary);
+}
+
+.work-method-steps__container {
+    display: flex;
+    gap: 30px;
+}
+
+.steps-visual__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.steps-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: var(--heading-font);
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color-primary);
+    border-radius: 99px;
+}
+
+.steps-line {
+    width: 2px;
+    background-color: var(--line-accent-color);
+    height: calc(100% - 56px);
+    margin-bottom: 8px;
+}
+
+.steps-content__container .button {
+    margin-top: 5px;
+    margin-bottom: 45px;
 }

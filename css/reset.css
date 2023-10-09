@@ -7,6 +7,7 @@
 
     --overlay-color-hero: rgba(126, 10, 10, 0.54);
     --figure-color-primary: rgba(98, 2, 2, 0.89);
+    --line-accent-color: rgba(255, 255, 255, 0.65);
 
     --heading-font: 'AR One Sans', 'Arial', sans-serif; /*500 / 700*/
     --standard-font: 'Montserrat', 'Arial', sans-serif; /*200 / 400 / 500*/
@@ -57,6 +58,7 @@
     outline: 0;
     color: inherit;
     cursor: pointer;
+    background: inherit;
   }
   
   q {
