@@ -64,6 +64,7 @@ h2 {
     font-size: 1.5em;
     font-weight: 700;
     padding-bottom: 12px;
+    line-height: normal;
 }
 
 h3 {
@@ -71,6 +72,7 @@ h3 {
     font-size: 1.125em;
     font-weight: 500;
     padding-bottom: 10px;
+    line-height: normal;
 }
 
 
@@ -93,6 +95,7 @@ h3 {
     font-family: var(--heading-font);
     font-size: 2.5rem;
     font-weight: 700;
+    line-height: normal;
 }
 
 .hero-content__holder--text p {
@@ -374,6 +377,7 @@ h3 {
     height: 40px;
     background-color: var(--accent-color-primary);
     border-radius: 99px;
+    line-height: normal;
 }
 
 .steps-line {
@@ -386,4 +390,54 @@ h3 {
 .steps-content__container .button {
     margin-top: 5px;
     margin-bottom: 45px;
+}
+
+
+
+/*Footer*/
+footer {
+    background-color: var(--background-color-secondary);
+}
+
+.footer-content__holder {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.footer-logo__holder {
+    max-height: 100px;
+    max-width: 110px;
+}
+
+.footer-logo__holder img {
+    max-height: inherit;
+    object-fit: cover;
+}
+
+.footer-navigation-links__container {
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+.footer-socials__holder {
+    display: flex;
+    gap: 20px;
+}
+
+.socials-icon__container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 99px;
+    background-color: var(--accent-color-primary);
+}
+
+.socials-icon__container img {
+    filter: invert(100%);
+    max-width: 16px;
+    max-height: 20px;
 }
