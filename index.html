@@ -24,20 +24,51 @@
 
     <body>
         <header>
-            <div class="header-content__holder"> <!--Likely has to be absolute.-->
-                <div class="header-logo__holder">
-
+            <div class="header-content__holder fourteenFourty"> <!--Likely has to be absolute.-->
+                <div class="header-logo__holder responsiveImg">
+                    <img src="img/logo-nobg.png" alt="Farao Fitness Logo" />
                 </div>
 
                 <div class="mobile-navigation__holder">
-
+                    <button id="navIcon" aria-label="Open Menu" aria-controls="main-menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div id="navDropdown" class="mobile-navigation__dropdown">
+                        <div class="menu__title">
+                            <span>Menu</span>
+                        </div>
+                        <nav id="main-menu" aria-label="Menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html#SECTION">Home</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="kosten.html">Kosten</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
                 <div class="desktop-navigation__holder">
-
+                    <nav>
+                        <ul class="header-navigation-links__container">
+                            <li><a href="index.html#SECTION">Home</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="kosten.html#SECTION">Kosten</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="contact.html#SECTION">Contact</a></li> <!--NAV PLACEHOLDER-->
+                        </ul>
+                    </nav>
                 </div>
 
                 <div class="header-button__holder">
-
+                    <div class="button button__outline">
+                        <a href="contact.html#contactForm">Gratis Proefles</a>
+                    </div>
                 </div>
             </div>
         </header>
