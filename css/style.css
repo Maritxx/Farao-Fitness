@@ -61,7 +61,7 @@
 
 .button__outline:hover {
     background-color: var(--accent-color-primary);
-    border: 1px inset var(--accent-color-primary);
+    border: 1px solid var(--accent-color-primary);
 }
 
 body {
