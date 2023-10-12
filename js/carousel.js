@@ -6,7 +6,7 @@ const slideButtonPrev = document.getElementById("slideButtonPrev");
 const slideButtonNext = document.getElementById("slideButtonNext");
 
 async function getReviews() {
-    const response = await fetch("/data/reviews.json");
+    const response = await fetch("data/reviews.json");
     const reviewData = await response.json();
     createSlides(reviewData);
 }
