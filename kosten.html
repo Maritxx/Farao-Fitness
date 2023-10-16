@@ -5,24 +5,128 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Farao Fitness Description here"> <!--NOT DONE-->
 
-        <link rel="icon" type="img/png" sizes="32x32" href="img/logo.png"> <!--SMALLER + REMOVE BG-->
+        <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png"> <!--SMALLER + REMOVE BG-->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;700&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
         <!--Add in Fontawesome (?)-->
         <!--Add in Google Recaptcha-->
 
         <title>Farao Fitness | Kosten</title>
 
         <script defer src="js/main.js"></script>
-        <script defer src="js/carousel.js"></script>
     </head>
 
     <body>
+        <header>
+            <div class="header-content__holder fourteenFourty"> <!--Likely has to be absolute.-->
+                <div class="header-logo__holder responsiveImg">
+                    <img src="img/logo-nobg.png" alt="Farao Fitness Logo" />
+                </div>
 
+                <div class="mobile-navigation__holder">
+                    <button id="navIcon" aria-label="Open Menu" aria-controls="main-menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div id="navDropdown" class="mobile-navigation__dropdown">
+                        <div class="menu__title">
+                            <span>Menu</span>
+                        </div>
+                        <nav id="main-menu" aria-label="Menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html#SECTION">Home</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="kosten.html">Kosten</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id="dropdownOverlay"></div>
+                    </div>
+                </div>
+                <div class="desktop-navigation__holder">
+                    <nav>
+                        <ul class="header-navigation-links__container">
+                            <li><a href="index.html#SECTION">Home</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="kosten.html#SECTION">Kosten</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="contact.html#SECTION">Contact</a></li> <!--NAV PLACEHOLDER-->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-button__holder">
+                    <div class="button button__outline">
+                        <a href="contact.html#contactForm">Gratis Proefles</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="kosten-select__section fourteenFourty">
+                <div class="select-content__holder">
+                    <div class="select-text__container">
+                        <h1>Kies het pakket dat bij je past!</h1>
+                        <span>Selecteer de gewenste tijdsduur om de prijzen te zien.</span>
+                    </div>
+                    <div class="select-buttons__container">
+                        <button class="button button__kosten">1 Maand</button>
+                        <button class="button button__kosten">3 Maanden</button>
+                        <button class="button button__kosten">6 Maanden</button>
+                        <button class="button button__kosten">12 Maanden</button>
+                    </div>
+                </div>
+                <div class="banner-animation banner-animation--1"></div>
+                <div class="banner-animation banner-animation--2"></div>
+                <div class="banner-animation banner-animation--3"></div>
+                <div class="banner-animation banner-animation--4"></div>
+                <div class="banner-animation banner-animation--5"></div>
+                <div class="banner-animation banner-animation--6"></div>
+                <div class="banner-animation banner-animation--7"></div>
+                <div class="banner-animation banner-animation--8"></div>
+                <div class="banner-animation banner-animation--9"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content__holder fourteenFourty">
+                <div class="footer-logo__holder responsiveImg">
+                    <img src="img/logo-nobg.png" alt="Farao Fitness Logo" />
+                </div>
+
+                <div class="footer-navigation__holder">
+                    <nav>
+                        <ul class="footer-navigation-links__container">
+                            <li><a href="index.html#SECTION">Home</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="kosten.html#SECTION">Kosten</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="contact.html#SECTION">Contact</a></li> <!--NAV PLACEHOLDER-->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-socials__holder">
+                    <div class="socials-icon__container">
+                        <a href="#" target="_blank" aria-label="Ga naar Farao Fitness Facebook" class="responsiveImg"> <!--NAV PLACEHOLDER-->
+                            <img src="img/icons/facebook.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="socials-icon__container">
+                        <a href="mailto:#" target="_blank" aria-label="Stuur een mail naar Farao Fitness" class="responsiveImg"> <!--NAV PLACEHOLDER-->
+                            <img src="img/icons/mail.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>

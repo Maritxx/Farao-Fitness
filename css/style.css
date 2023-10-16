@@ -737,6 +737,97 @@ footer {
 
 
 
+/*Kosten Pagina*/
+/*Kosten Select Section*/
+.kosten-select__section {
+    position: relative;
+    background: radial-gradient(#BF0404,#181818);
+    overflow: hidden;
+}
+
+.select-content__holder {
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 100px;
+    z-index: 2;
+}
+
+.banner-animation {
+    position: absolute;
+    width: 0px;
+    top: 100%;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    margin: auto;
+    box-shadow: #0D0D0E 0px 0px 20px 2px;
+    z-index: 1;
+}
+
+.banner-animation--1 {
+    animation: floatUp 4s infinite linear;
+    transform: scale(1.0);
+}
+
+.banner-animation--2 {
+    animation: floatUp 7s infinite linear;
+    transform: scale(1.6);
+    left: 15%;
+}
+
+.banner-animation--3 {
+    animation: floatUp 2.5s infinite linear;
+    transform: scale(0.5);
+    left: -15%;
+}
+
+.banner-animation--4 {
+    animation: floatUp 4.5s infinite linear;
+    transform: scale(1.2);
+    left: -34%;
+}
+
+.banner-animation--5 {
+    animation: floatUp 8s infinite linear;
+    transform: scale(2.2);
+    left: -57%;
+}
+
+.banner-animation--6 {
+    animation: floatUp 3s infinite linear;
+    transform: scale(0.8);
+    left: -81%;
+}
+
+.banner-animation--7 {
+    animation: floatUp 5.3s infinite linear;
+    transform: scale(3.2);
+    left: 37%;
+}
+
+.banner-animation--8 {
+    animation: floatUp 4.7s infinite linear;
+    transform: scale(1.7);
+    left: 62%;
+}
+
+.banner-animation--9 {
+    animation: floatUp 4.1s infinite linear;
+    transform: scale(0.9);
+    left: 85%;
+}
+
+@keyframes floatUp {
+    0% { top: 100%; opacity: 0;}
+    25% {opacity: 1;}
+    50% {top: 0px; opacity: 0.8;}
+    75% {opacity: 1;}
+    100% {top: -100%; opacity: 0;}
+}
+
+
+
 /*Media Queries*/
 /*Tablet*/ 
 @media screen and (min-width: 480px) {
@@ -890,6 +981,12 @@ footer {
 
     .footer-logo__holder {
         max-height: 100px;
+    }
+
+    /*Kosten Select Section*/
+    .select-content__holder {
+        padding-top: 220px;
+        padding-bottom: 120px;
     }
 }
 
