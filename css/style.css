@@ -748,8 +748,42 @@ footer {
 .select-content__holder {
     position: relative;
     padding-top: 120px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     z-index: 2;
+    text-align: center;
+}
+
+.select-text__container {
+    margin-bottom: 80px;
+}
+
+.select-buttons__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.button__kosten {
+    border: 1px solid var(--text-color-primary);
+    transition: all .20s ease-in-out;
+}
+
+.button__kosten--active {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.button__kosten:hover {
+    border: 1px solid black;
+    background-color: black;
+}
+
+.select-disclaimer__text {
+    font-size: 14px;
+    padding-top: 10px;
+    font-style: italic;
+    font-weight: 500;
 }
 
 .banner-animation {
@@ -826,6 +860,85 @@ footer {
     100% {top: -100%; opacity: 0;}
 }
 
+
+
+/*Kosten Packages Section*/
+.kosten-packages__section {
+    margin-top: -110px;
+    z-index: 2;
+    margin-bottom: 75px;
+}
+
+.packages-content__holder {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+}
+
+.package__container {
+    max-width: 350px;
+    width: 100%;
+    height: fit-content;
+    padding: 30px 15px;
+    border-radius: 16px;
+    background-image: linear-gradient(to top, #870000, #190a05);
+    box-shadow: 0px 0px 15px 2px var(--accent-color-primary);
+
+}
+
+.package-title {
+    display: inline-block;
+    font-family: var(--heading-font);
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+    text-shadow: -2px 1px 1px rgba(24,24,24, 0.7);
+    text-transform: uppercase;
+}
+
+.package-price__container {
+    margin-bottom: 10px;
+}
+
+.package-price-symbol {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: normal;
+    text-shadow: -2px 1px 1px rgba(24, 24, 24, 0.7);
+}
+
+.package-price-amount {
+    font-size: 6em;
+    font-weight: 700;
+    line-height: normal;
+    text-shadow: -2px 2px 1px rgba(24,24,24, 0.7);
+}
+
+.package-divider {
+    display: inline-block;
+    font-family: var(--heading-font);
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: normal;
+    padding-bottom: 10px;
+    text-shadow: -2px 1px 1px rgba(24,24,24, 0.7);
+    text-transform: uppercase;
+}
+
+.package-list {
+    max-width: 300px;
+    margin: 0 auto 25px;
+}
+
+.package-list li {
+    margin-top: 10px;
+    font-weight: 500;
+    font-family: var(--heading-font);
+    line-height: normal;
+    text-shadow: -2px 1px 1px rgba(24,24,24, 0.7);
+}
 
 
 /*Media Queries*/
@@ -985,8 +1098,8 @@ footer {
 
     /*Kosten Select Section*/
     .select-content__holder {
-        padding-top: 220px;
-        padding-bottom: 120px;
+        padding-top: 150px;
+        padding-bottom: 200px;
     }
 }
 
