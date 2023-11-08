@@ -67,12 +67,10 @@
     font-style: italic;
   }
   
-  textarea, input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], input[type="search"], input[type="password"] input[type="number"], input[type="email"] {
+  textarea, input, input[type="text"], input[type="button"], input[type="submit"], input[type="reset"], input[type="search"], input[type="password"] input[type="number"], input[type="email"] {
     -webkit-appearance: none;
     appearance: none;
     font-family: inherit;
-    border-radius: 0;
-    border: 0;
     outline: none;
     resize: none;
   }

@@ -941,6 +941,108 @@ footer {
 }
 
 
+
+/*Contact Pagina*/
+/*Contact Hero Section*/
+.contact-hero__section {
+    position: relative;
+    background: radial-gradient(#BF0404,#181818);
+    overflow: hidden;
+}
+
+.contact-hero-content__holder {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.hero-accent--contact {
+    color: black;
+}
+
+
+/*Contact Info Section*/
+.contact-info__section {
+    margin-top: -100px;
+    margin-bottom: 75px;
+}
+
+.contact-info-content__holder {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.contact-hero__subtitle {
+    font-family: var(--heading-font);
+    font-style: italic;
+    opacity: 0.92;
+    font-size: 22px;
+    margin-top: 20px;
+    text-shadow: -2px 1px 1px rgba(24,24,24, 0.7);
+}
+
+.contact-form__holder {
+    padding: 30px;
+    background-color: var(--background-color-secondary);
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 0px 15px 3px rgb(133,2,2);
+    text-align: right;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact__input {
+    background-color: inherit;
+    color: var(--text-color-primary);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--accent-color-primary);
+    border-radius: 4px;
+}
+
+.contact__input::placeholder {
+    color: var(--text-color-primary);
+    opacity: 0.6;
+}
+
+.button__contact {
+    background-color: var(--accent-color-primary);
+    transition: all .15s ease-out;
+    margin-top: 20px;
+}
+
+.button__contact:hover {
+    box-shadow: 4px 4px 0 #5f0202;
+    transform: translate(-4px,-4px);
+}
+
+.contact-text__holder {
+    padding: 30px;
+    background-color: var(--background-color-secondary);
+    border-radius: 16px;
+    height: fit-content;
+    box-shadow: 0px 0px 15px 3px rgb(133,2,2);
+}
+
+.contact-text__holder p {
+    padding-bottom: 5px;
+    font-family: var(--heading-font);
+}
+
+.contact-text__holder a {
+    color: var(--accent-color-primary);
+    font-family: var(--heading-font);
+}
+
+
+
 /*Media Queries*/
 /*Tablet*/ 
 @media screen and (min-width: 480px) {
@@ -1101,6 +1203,13 @@ footer {
         padding-top: 150px;
         padding-bottom: 200px;
     }
+
+    /*Contact Hero Section*/
+    .contact-hero-content__holder {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
 }
 
 

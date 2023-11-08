@@ -5,24 +5,140 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Farao Fitness Description here"> <!--NOT DONE-->
 
-        <link rel="icon" type="img/png" sizes="32x32" href="img/logo.png"> <!--SMALLER + REMOVE BG-->
+        <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png"> <!--SMALLER + REMOVE BG-->
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-
+        <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@500;700&family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
         <!--Add in Fontawesome (?)-->
         <!--Add in Google Recaptcha-->
 
-        <title>Farao Fitness | Contact</title>
+        <title>Farao Fitness | Kosten</title>
 
         <script defer src="js/main.js"></script>
-        <script defer src="js/carousel.js"></script>
     </head>
 
     <body>
+        <header>
+            <div class="header-content__holder fourteenFourty"> <!--Likely has to be absolute.-->
+                <div class="header-logo__holder responsiveImg">
+                    <img src="img/logo-nobg.png" alt="Farao Fitness Logo" />
+                </div>
 
+                <div class="mobile-navigation__holder">
+                    <button id="navIcon" aria-label="Open Menu" aria-controls="main-menu" aria-expanded="false">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div id="navDropdown" class="mobile-navigation__dropdown">
+                        <div class="menu__title">
+                            <span>Menu</span>
+                        </div>
+                        <nav id="main-menu" aria-label="Menu">
+                            <ul>
+                                <li>
+                                    <a href="index.html#SECTION">Home</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="kosten.html">Kosten</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a> <!--NAV PLACEHOLDER-->
+                                </li>
+                            </ul>
+                        </nav>
+                        <div id="dropdownOverlay"></div>
+                    </div>
+                </div>
+                <div class="desktop-navigation__holder">
+                    <nav>
+                        <ul class="header-navigation-links__container">
+                            <li><a href="index.html#SECTION">Home</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="kosten.html#SECTION">Kosten</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="contact.html#SECTION">Contact</a></li> <!--NAV PLACEHOLDER-->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="header-button__holder">
+                    <div class="button button__outline">
+                        <a href="contact.html#contactForm">Gratis Proefles</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="contact-hero__section fourteenFourty">
+                <div class="contact-hero-content__holder">
+                    <h1>Your <span class="hero-accent hero-accent--contact">catchphrase</span> will go <span class="hero-accent hero-accent--contact">here</span>, in bold!</h1>
+                    <p class="contact-hero__subtitle">Wacht niet langer en neem vandaag nog contact op!</p>
+                </div>
+                <div class="banner-animation banner-animation--1"></div>
+                <div class="banner-animation banner-animation--2"></div>
+                <div class="banner-animation banner-animation--3"></div>
+                <div class="banner-animation banner-animation--4"></div>
+                <div class="banner-animation banner-animation--5"></div>
+                <div class="banner-animation banner-animation--6"></div>
+                <div class="banner-animation banner-animation--7"></div>
+                <div class="banner-animation banner-animation--8"></div>
+                <div class="banner-animation banner-animation--9"></div>
+            </section>
+
+            <section class="contact-info__section tenEighty">
+                <div class="contact-info-content__holder">
+                    <div class="contact-form__holder">
+                        <form class="contact__form" id="contactForm" name="contactForm" method="POST" action="">
+                            <input class="contact__input" id="visitorName" type="text" name="name" placeholder="Naam" required>
+                            <input class="contact__input" id="visitorEmail" type="email" name="email" placeholder="Emailadres" required>
+                            <input class="contact__input" id="visitorMobile" type="tel" name="tel" placeholder="Telefoonnummer" required>
+                            <textarea class="contact__input contact__input--textarea" id="visitorMessage" name="message" rows="4" placeholder="Typ hier je bericht..." required></textarea>
+                        </form>
+                        <button class="button button__contact" id="submitForm">Verstuur</button>
+                    </div>
+                    <div class="contact-text__holder">
+                        <h2>Contact</h2>
+                        <p>Kariem Abozyid</p>
+                        <p>06-28323176</p>
+                        <a href="mailtocoach.kariem@gmail.com">Coach.kariem@gmail.com</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content__holder fourteenFourty">
+                <div class="footer-logo__holder responsiveImg">
+                    <img src="img/logo-nobg.png" alt="Farao Fitness Logo" />
+                </div>
+
+                <div class="footer-navigation__holder">
+                    <nav>
+                        <ul class="footer-navigation-links__container">
+                            <li><a href="index.html#SECTION">Home</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="kosten.html#SECTION">Kosten</a></li> <!--NAV PLACEHOLDER-->
+                            <li><a href="contact.html#SECTION">Contact</a></li> <!--NAV PLACEHOLDER-->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-socials__holder">
+                    <div class="socials-icon__container">
+                        <a href="#" target="_blank" aria-label="Ga naar Farao Fitness Facebook" class="responsiveImg"> <!--NAV PLACEHOLDER-->
+                            <img src="img/icons/facebook.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="socials-icon__container">
+                        <a href="mailto:#" target="_blank" aria-label="Stuur een mail naar Farao Fitness" class="responsiveImg"> <!--NAV PLACEHOLDER-->
+                            <img src="img/icons/mail.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
